@@ -1,0 +1,121 @@
+/* General styles sets the font, text color, background color and removes margins and paddings */
+body {
+    font-family: 'Arial, sans-serif';
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the header with a background color, text color and padding */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 2px solid #333;
+}
+
+/* Adding margin, padding, background color, border, border-radius and box-shadow to sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the form elements, including lables, input fields and the submit button  */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #14395c;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Image styles centers the image and ensure it is responsive */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(13, 41, 38);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    border-top: 2px solid #4CAF50;
+    margin-top: 20px;
+}
+
+/* Responsive styles adjusts the styles for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+        padding: 8px;
+    }
+
+    form input[type="submit"] {
+        padding: 8px;
+    }
+
+    table, th, td {
+        padding: 8px;
+    }
+}
